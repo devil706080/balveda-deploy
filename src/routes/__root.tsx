@@ -11,6 +11,7 @@ import { useEffect, type ReactNode } from "react";
 
 import appCss from "../styles.css?url";
 import { reportLovableError } from "../lib/lovable-error-reporting";
+import logoImg from "../assets/balveda-logo.jpg.jpg?url";
 
 function NotFoundComponent() {
   return (
@@ -77,20 +78,18 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
-      { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { title: "Bal Veda – Ayurvedic Growth Formula" },
+      { name: "description", content: "Bal Veda Smart Poshan Powder – 100% Ayurvedic growth formula for children with 12 power herbs." },
+      { name: "author", content: "Bal Veda" },
+      { property: "og:title", content: "Bal Veda – Ayurvedic Growth Formula" },
+      { property: "og:description", content: "Bal Veda Smart Poshan Powder – 100% Ayurvedic growth formula for children with 12 power herbs." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
-      { name: "twitter:site", content: "@Lovable" },
     ],
     links: [
-      {
-        rel: "stylesheet",
-        href: appCss,
-      },
+      { rel: "stylesheet", href: appCss },
+      { rel: "icon", type: "image/jpeg", href: logoImg },
+      { rel: "apple-touch-icon", href: logoImg },
     ],
   }),
   shellComponent: RootShell,
