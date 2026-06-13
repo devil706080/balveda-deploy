@@ -1,15 +1,11 @@
 [build]
   command = "npm install && npm run build"
-  publish = ".output/public"
+  publish = "dist/public"
 
 [build.environment]
   NODE_VERSION = "20"
 
 [[redirects]]
   from = "/*"
-  to = "/.netlify/functions/server"
+  to = "/index.html"
   status = 200
-
-[functions]
-  directory = ".output/server"
-  node_bundler = "esbuild"
