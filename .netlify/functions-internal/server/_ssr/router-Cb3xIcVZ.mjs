@@ -2,7 +2,7 @@ import { r as __toESM } from "../_runtime.mjs";
 import { n as require_jsx_runtime, r as require_react, t as QueryClientProvider } from "../_libs/react+tanstack__react-query.mjs";
 import { M as useRouter, c as HeadContent, d as Outlet, f as lazyRouteComponent, h as Link, m as createRootRouteWithContext, p as createFileRoute, s as Scripts, u as createRouter } from "../_libs/@tanstack/react-router+[...].mjs";
 import { t as QueryClient } from "../_libs/tanstack__query-core.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/router-Ba5VFQvd.js
+//#region node_modules/.nitro/vite/services/ssr/assets/router-Cb3xIcVZ.js
 var import_react = /* @__PURE__ */ __toESM(require_react());
 var import_jsx_runtime = require_jsx_runtime();
 var styles_default = "/assets/styles-BUQKHBAo.css";
@@ -18,6 +18,7 @@ function reportLovableError(error, context = {}) {
 		severity: "error"
 	});
 }
+var balveda_logo_jpg_default = "/assets/balveda-logo.jpg-rPgudedt.jpg";
 function NotFoundComponent() {
 	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
 		className: "flex min-h-screen items-center justify-center bg-background px-4",
@@ -94,22 +95,22 @@ var Route$1 = createRootRouteWithContext()({
 				name: "viewport",
 				content: "width=device-width, initial-scale=1"
 			},
-			{ title: "Lovable App" },
+			{ title: "Bal Veda – Ayurvedic Growth Formula" },
 			{
 				name: "description",
-				content: "Lovable Generated Project"
+				content: "Bal Veda Smart Poshan Powder – 100% Ayurvedic growth formula for children with 12 power herbs."
 			},
 			{
 				name: "author",
-				content: "Lovable"
+				content: "Bal Veda"
 			},
 			{
 				property: "og:title",
-				content: "Lovable App"
+				content: "Bal Veda – Ayurvedic Growth Formula"
 			},
 			{
 				property: "og:description",
-				content: "Lovable Generated Project"
+				content: "Bal Veda Smart Poshan Powder – 100% Ayurvedic growth formula for children with 12 power herbs."
 			},
 			{
 				property: "og:type",
@@ -118,16 +119,23 @@ var Route$1 = createRootRouteWithContext()({
 			{
 				name: "twitter:card",
 				content: "summary"
-			},
-			{
-				name: "twitter:site",
-				content: "@Lovable"
 			}
 		],
-		links: [{
-			rel: "stylesheet",
-			href: styles_default
-		}]
+		links: [
+			{
+				rel: "stylesheet",
+				href: styles_default
+			},
+			{
+				rel: "icon",
+				type: "image/jpeg",
+				href: balveda_logo_jpg_default
+			},
+			{
+				rel: "apple-touch-icon",
+				href: balveda_logo_jpg_default
+			}
+		]
 	}),
 	shellComponent: RootShell,
 	component: RootComponent,
