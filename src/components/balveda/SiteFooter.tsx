@@ -21,7 +21,7 @@ export function SiteFooter() {
           </p>
         </div>
 
-        <div>
+        {/* <div>
           <h4 className="text-sm font-semibold text-foreground">Explore</h4>
           <ul className="mt-3 space-y-2">
             {navLinks.map((l) => (
@@ -30,7 +30,7 @@ export function SiteFooter() {
               </li>
             ))}
           </ul>
-        </div>
+        </div> */}
 
         <div>
           <h4 className="text-sm font-semibold text-foreground">Contact</h4>
